@@ -16,7 +16,7 @@
         <h1>URL Shortener</h1>
         <form id="post-form">
             {% csrf_token %}
-            <input type="text" name="link" id="link" placeholder="Enter URL Here...">
+            <input type="url" name="link" id="link" placeholder="Enter URL Here...">
             <div class="buttons">
                 <button type="submit" id="shorten">Shorten</button>
             </div>
