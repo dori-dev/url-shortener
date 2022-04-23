@@ -3,6 +3,7 @@ from .models import Url
 
 
 class UrlAdmin(admin.ModelAdmin):
+    search_fields = ["uuid", "link"]
     list_display = ["link", "uuid"]
 
 
